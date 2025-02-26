@@ -1,11 +1,12 @@
 <h2>Presidents of Ireland</h2>
-<ul>
+<ul><!--using ngFor as a html for loop to print out the contents of the array to the site-->
     <li *ngFor="let president of presidents">
          {{ president.name }} {{president.term}}
         </li>
 </ul>
 
 <ol>
+    <!--Basically doing the same thing as above just a little differently-->
     @for(pres of presidents;track pres){
         <li>{{pres.name}} {{pres.term}}</li>
     }
